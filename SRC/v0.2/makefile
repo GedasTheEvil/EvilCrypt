@@ -3,7 +3,7 @@ CC=g++
 RM=rm -f
 CFLAGS=-c -Wall -pedantic -Xlinker -zmuldefs -o3 -march=native
 CDFLAGS=-c -Wall -pedantic -Xlinker -zmuldefs
-LDFLAGS= -lX11  -lglut -lGL -lGLU -lm -ldl -L/usr/X11R6/lib  `sdl-config --cflags --libs` -lSDL_mixer
+LDFLAGS=
 
 SOURCES=main.cpp lib/caesar_string.cpp algorithms/caesar.cpp
 
