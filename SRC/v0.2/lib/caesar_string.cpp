@@ -1,12 +1,20 @@
 #include "caesar_string.h"
 #include <string.h>
 
+//=============================================================================
+// Main constructor
+//=============================================================================
+
 CaesarString::CaesarString( char *string )
 {
         strcpy(string, str);
         length = strlen();
         iter = 0;
 }//constructor
+
+//=============================================================================
+// Fallback constructor
+//=============================================================================
 
 CaesarString::CaesarString()
 {
@@ -15,6 +23,10 @@ CaesarString::CaesarString()
         iter= 0;
         length = 1;
 }
+
+//=============================================================================
+// Char iterator. Returns the char and mover cursor forward (loop)
+//=============================================================================
 
 char CaesarString::getChar()
 {
@@ -29,3 +41,4 @@ char CaesarString::getChar()
         
         return to_return;
 }//getChar
+
