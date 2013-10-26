@@ -8,8 +8,8 @@
 CaesarString::CaesarString( char *string )
 {
         strcpy(string, str);
-        length = strlen();
-        iter = 0;
+        length = strlen(string);
+        iter   = 0;
 }//constructor
 
 //=============================================================================
@@ -18,9 +18,9 @@ CaesarString::CaesarString( char *string )
 
 CaesarString::CaesarString()
 {
-        str = new char[1];
+        str    = new char[1];
         str[0] = 0;
-        iter= 0;
+        iter   = 0;
         length = 1;
 }
 
@@ -42,3 +42,13 @@ char CaesarString::getChar()
         return to_return;
 }//getChar
 
+//=============================================================================
+// Destructor
+//=============================================================================
+
+CaesarString::~CaesarString()
+{
+	delete str;
+	iter   = 0;
+	length = 0;
+}

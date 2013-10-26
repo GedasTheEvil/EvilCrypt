@@ -17,6 +17,8 @@ class CaesarString
         public:
                 CaesarString( char *string );
                 CaesarString();
+
+		~CaesarString();
                 
                 char getChar();               
         
