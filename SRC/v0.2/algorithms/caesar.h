@@ -2,6 +2,7 @@
 #define CaesarH
 
 #include "../lib/caesar_string.h"
+#include <cstddef>
 
 class Caesar
 {

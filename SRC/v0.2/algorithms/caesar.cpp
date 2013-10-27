@@ -1,5 +1,4 @@
 #include "caesar.h"
-#include <cstddef>
 
 //=============================================================================
 // Empty constructor

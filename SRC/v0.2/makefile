@@ -5,7 +5,7 @@ CFLAGS=-c -Wall -pedantic -Xlinker -zmuldefs -o3 -march=native
 CDFLAGS=-c -Wall -pedantic -Xlinker -zmuldefs
 LDFLAGS=
 
-SOURCES=main.cpp lib/caesar_string.cpp algorithms/caesar.cpp
+SOURCES=main.cpp lib/caesar_string.cpp algorithms/caesar.cpp lib/file_utils.cpp
 
 OBJECTS=$(SOURCES:.cpp=.o)
 
