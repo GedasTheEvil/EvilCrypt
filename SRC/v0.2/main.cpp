@@ -11,7 +11,7 @@ int main(int argc, char *argv[])
 		ui.print_help_text();
 	}
 
-	ArgParser *AP = new ArgParser( /*argc, argv*/);
+	ArgParser *AP = new ArgParser( argc, argv);
 
 	return 0;
 }

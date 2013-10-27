@@ -7,10 +7,10 @@ class ArgParser
 {
 	private:
 
-		int operation;
-		char *input_filename;
-		char *output_filename;
-		char *key_filename;
+		int operation = 0;
+		char *input_filename = NULL;
+		char *output_filename = NULL;
+		char *key_filename = NULL;
 
 		void add_fallbacks();
 		void set_all_to_null();

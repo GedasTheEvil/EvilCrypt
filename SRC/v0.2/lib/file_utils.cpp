@@ -52,6 +52,10 @@ FileUtils::FileUtils(char *filename)
 	this -> cursor = 0;
 	this -> f      = NULL;
 	this -> type   = 'r';
+
+	if( this -> filename == NULL )
+		this -> filename = new char[ strlen(filename) ];
+
 	strcpy(this -> filename, filename);
 }
 
@@ -70,6 +74,9 @@ FileUtils::FileUtils(char *filename, char type)
 		this-> type = 'r';
 
 	this -> open();
+
+	if( this -> filename == NULL )
+		this -> filename = new char[ strlen(filename) ];
 
 	strcpy(this -> filename, filename);
 }

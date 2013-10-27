@@ -9,10 +9,10 @@ class FileUtils
 {
 	private:
 
-		FILE *f;
+		FILE *f = NULL;
 		long size;
 		long cursor;
-		char *filename;
+		char *filename = NULL;
 		char type;
 
 		void calculate_size();

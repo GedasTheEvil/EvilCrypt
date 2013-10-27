@@ -85,19 +85,31 @@ void ArgParser::parse(int argc, char *argv[])
 		if( strcmp( argv[i], "-i" ) == 0 || strcmp( argv[i], "--input" ) == 0 )
 		{
 			i++;
-			strcpy( argv[i], this -> input_filename );
+
+			if( this -> input_filename == NULL )
+				this -> input_filename = new char[ strlen(argv[i]) ];
+
+			strcpy( this -> input_filename, argv[i] );
 		}
 
 		else if( strcmp( argv[i], "-o" ) == 0 || strcmp( argv[i], "--output" ) == 0 )
 		{
 			i++;
-			strcpy( argv[i], this -> output_filename );
+
+			if( this -> output_filename == NULL )
+				this -> output_filename = new char[ strlen(argv[i]) ];
+
+			strcpy( this -> output_filename, argv[i] );
 		}
 
 		else if( strcmp( argv[i], "-k" ) == 0 || strcmp( argv[i], "--key" ) == 0 )
 		{
 			i++;
-			strcpy( argv[i], this -> key_filename );
+
+			if( this -> key_filename == NULL )
+				this -> key_filename = new char[ strlen(argv[i]) ];
+
+			strcpy( this -> key_filename, argv[i] );
 		}
 	}
 
