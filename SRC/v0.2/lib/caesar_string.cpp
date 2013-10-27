@@ -7,7 +7,7 @@
 
 CaesarString::CaesarString( char *string )
 {
-        strcpy(string, str);
+        strcpy(str, string);
         length = strlen(string);
         iter   = 0;
 }//constructor

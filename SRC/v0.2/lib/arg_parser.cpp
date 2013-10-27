@@ -12,24 +12,24 @@ void ArgParser::add_fallbacks()
 	{
 		printf("Input filename was not set! Falling back to './input' \n");
 
-		this -> input_filename = new char[ strlen("input") ];
-		strcpy( (char*)"input", this -> input_filename );
+		//this -> input_filename = new char[ strlen("input") ];
+		strcpy( this -> input_filename, (char*)"input" );
 	}
 
 	if(this -> output_filename == NULL)
 	{
 		printf("Output filename was not set! Falling back to './output' \n");
 
-		this -> output_filename = new char[ strlen("output") ];
-		strcpy( (char*)"output", this -> output_filename );
+		//this -> output_filename = new char[ strlen("output") ];
+		strcpy( this -> output_filename, (char*)"output" );
 	}
 
 	if(this -> key_filename == NULL)
 	{
 		printf("Key filename was not set! Falling back to './key' \n");
 
-		this -> key_filename = new char[ strlen("key") ];
-		strcpy( (char*)"key", this -> key_filename );
+		//this -> key_filename = new char[ strlen("key") ];
+		strcpy( this -> key_filename, (char*)"key" );
 	}
 }
 

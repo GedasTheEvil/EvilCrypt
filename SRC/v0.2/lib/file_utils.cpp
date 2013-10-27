@@ -52,7 +52,7 @@ FileUtils::FileUtils(char *filename)
 	this -> cursor = 0;
 	this -> f      = NULL;
 	this -> type   = 'r';
-	strcpy(filename, this -> filename);
+	strcpy(this -> filename, filename);
 }
 
 //=============================================================================
@@ -71,7 +71,7 @@ FileUtils::FileUtils(char *filename, char type)
 
 	this -> open();
 
-	strcpy(filename, this -> filename);
+	strcpy(this -> filename, filename);
 }
 
 //=============================================================================
