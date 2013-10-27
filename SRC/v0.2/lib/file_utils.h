@@ -11,7 +11,7 @@ class FileUtils
 
 		FILE *f;
 		long size;
-		int cursor;
+		long cursor;
 		char *filename;
 		char type;
 
